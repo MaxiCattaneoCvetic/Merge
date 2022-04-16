@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+html {
+  font-size: 62, 5%;
+}
+/* ANIMACIONES*/
+
+.fondo img {
+  position: absolute;
+  z-index: -55;
+  width: 20%;
+  height: 30%;
+  animation: fondo 5s linear infinite;
+  animation-direction: alternate-reverse;
+
+}
+@keyframes fondo {
+  0%{
+    transform: translate(300px, -100px);
+
+  }
+
+  100%{
+    transform: translate(-100px, 300px);
+    display: none;
+  }
+
+}
+.fondo1 img {
+  position: absolute;
+  z-index: -5;
+  width: 20%;
+  height: 30%;
+  animation: fondo1 5s linear infinite;
+  animation-direction: alternate-reverse;
+
+}
+
+@keyframes fondo1 {
+  0%{
+    transform: translate(-100px, 300px);
+
+  }
+
+  100%{
+    transform: translate(300px, -100px);
+  }
+
+}
+
+
+
+:root {
+  --color-nav: #242e52;
+  --color-botones: #f3603b;
+  --color-letras: #232851;
+  --color-fondobox: #fafafa;
+  --color-footer: #1e1e26;
+}
+
+.fa-brands {
+  color: white;
+}
+
+/**---------- INICIO HEADER MENU LOGO Y BOTTON-------------**/
+
+.mobile {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+h1 {
+  color: #242e52;
+}
+
+h1::before {
+  content: url("../img/img-deskt-logo.png");
+  margin: 0.5rem;
+}
+
+.head-box2 nav ul li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.head-box2 nav ul li a {
+  text-decoration: none;
+  color: #242e52;
+  font-size: 0.8rem;
+}
+
+.head-box2 nav ul li a:hover {
+  text-decoration: underline #f34e24;
+  background-color: #f89881;
+  transition: 1s;
+  font-size: 1.1rem;
+}
+.get-b-m {
+  display: none;
+}
+
+.get-b:hover{
+  transform: scale(1.02);
+}
+
+.get-b-c:hover{
+  transform: scale(1.02);
+}
+
+button.get-b {
+  border-radius: 20px;
+  background-color: var(--color-botones);
+  color: white;
+  width: 11vw;
+  height: 4vh;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.get-b:hover {
+  cursor: pointer;
+}
+/**---------- FIN HEADER MENU LOGO Y BOTTON-------------**/
+
+/**-------INICIO DE MAIN ESTADISTICA E INFORMACION-------**/
+
+article.boxs-main {
+  display: flex;
+  gap: 10px;
+}
+
+.manege-a {
+  align-items: flex-start;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  width: 50%;
+  margin-left: 6rem;
+  margin-top: 7rem;
+}
+
+.manege-a h2 {
+  color: var(--color-letras);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.manege-a p {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+/**------------ ESTADISTICAS---------------**/
+
+.em-1 {
+  background-image: url("../img/estadisticas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 450px;
+  width: 50vw;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+/**-------FIN DE MAIN ESTADISTICA E INFORMACION-------**/
+
+/**------------ INICIO DE MAIN PART2---------------*/
+
+article.main-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.m2a {
+  width: 48vw;
+  margin-left: 5rem;
+}
+
+.m2a h2 {
+  color: #232851;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 36vw;
+}
+
+.m2a p {
+  margin-top: 3rem;
+  width: 39%;
+}
+
+/**------------ INICIO DE LISTA DE INFORMACION ---------------*/
+.m2b {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div.alinear {
+  display: flex;
+  gap: 2rem;
+}
+
+.number {
+  background-color: var(--color-botones);
+  border-radius: 43px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 64px;
+  height: 35px;
+  text-align: center;
+  margin-top: 1.01%;
+}
+
+div.alinear h3 {
+  font-size: 1rem;
+}
+
+.b2_text {
+  margin-left: 97px;
+  margin-top: 1px;
+  width: 100%;
+
+}
+/**------------ FIN DE LISTA DE INFORMACION ---------------*/
+
+/*------------ INICIO COMENTARIOS ---------------*/
+
+.comentarios_box {
+  display: flex;
+  justify-content: center;
+  gap: 1.9rem;
+}
+
+.h2-comment {
+  color: var(--color-letras);
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 10rem;
+}
+
+.box {
+  background-color: var(--color-fondobox);
+  width: 100%;
+  height: 227px;
+}
+
+.img1 {
+  background-image: url(../img/avatar-anisha.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: 28%;
+  left: 41%;
+  height: 100px;
+  width: 100px;
+}
+
+.img2 {
+  background-image: url(../img/avatar-ali.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 28%;
+  left: 41%;
+}
+
+.img3 {
+  background-image: url(../img/avatar-richard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 28%;
+  left: 41%;
+}
+
+.texto_comment {
+  text-align: center;
+  position: relative;
+  bottom: 2%;
+  gap: 10px;
+}
+
+.centrar-b {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+button.get-b-c {
+  border-radius: 20px;
+  background-color: var(--color-botones);
+  color: white;
+  width: 11vw;
+  height: 4vh;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.get-b-c:hover {
+  cursor: pointer;
+}
+
+/**--------PRE FOOTER------------*/
+
+.pre_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-botones);
+  height: 30%;
+  width: 100%;
+}
+
+.pre_footer h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.pre_footer button {
+  background-color: white;
+  color: var(--color-botones);
+  border-radius: 40px;
+  width: 9vw;
+  height: 4vh;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pre_footer button:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+/*INICIO FOOTER*/
+
+.footer-mobile {
+  display: none;
+}
+
+footer {
+  align-items: center;
+  background-color: var(--color-footer);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 247px;
+  width: 100%;
+  padding: 0 55px;
+}
+
+.contacto {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-right: 10px;
+  margin-left: 23px;
+}
+
+.f1 h2 {
+  color: white;
+  font-size: 2.3rem;
+}
+.copy-r-m {
+  display: none;
+}
+
+h2.logo-f::before {
+  content: url(/img/Group.png);
+  margin: 0.8rem;
+}
+
+.container-contacto {
+  display: none;
+}
+
+.menu-f-b nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav a:hover {
+  text-decoration: underline;
+  color: var(--color-botones);
+}
+
+i:hover {
+  text-decoration: underline;
+  color: var(--color-botones);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/*------------ FORMULARIO ---------------*/
+
+.formulario {
+  display: flex;
+  gap: 10px;
+}
+
+fieldset {
+  border: transparent;
+}
+
+input.inp-f {
+  border-radius: 30px;
+  width: 267px;
+  height: 48px;
+}
+
+::placeholder {
+  color: #a0a0a0;
+  padding: 20px;
+}
+
+button.b-form {
+  color: white;
+  cursor: pointer;
+  background-color: var(--color-botones);
+  border-radius: 30px;
+  position: relative;
+  width: 81px;
+  height: 52px;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.copy-r {
+  color: #8c8c94;
+  margin-top: 6rem;
+}
+
+/* --------------DISEÑO RESPONSIVE PARTE 1----------- */
+
+@media screen and (max-width: 1160px) {
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  article.boxs-main {
+    gap: 5px;
+  }
+
+  .manege-a {
+    height: 567px;
+    gap: 1.2rem;
+    width: 50%;
+    margin-left: 6rem;
+    margin-top: 7rem;
+  }
+
+  .pre_footer h2 {
+    font-size: 2rem;
+  }
+
+  .pre_footer button {
+    width: 9vw;
+    height: 4vh;
+    font-size: 0.8rem;
+  }
+
+  .menu-f-b nav ul li a {
+    font-size: 1rem;
+  }
+
+  input.inp-f {
+    border-radius: 30px;
+    width: 212px;
+    height: 30px;
+  }
+
+  .formulario {
+    margin-top: 28%;
+  }
+
+  button.b-form {
+    width: 81px;
+    height: 33px;
+    font-size: 1rem;
+  }
+}
+
+/* --------------DISEÑO RESPONSIVE PARTE 2 ----------- */
+
+@media screen and (max-width: 965px) {
+
+  html{
+    background-image: url("../img/bg-tablet-pattern.svg");
+    background-size:cover;
+    background-size: 65%;
+  }
+
+.fondo{
+  display: none;
+}
+.fondo1{
+  display: none;
+}
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 6%;
+  }
+
+  .mobile:hover{
+    cursor: pointer;
+  }
+
+  .boxs-main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .em-1 {
+    background-image: url("../img/illustration-intro.svg");
+    margin: 0%;
+    height: 450px;
+    width: 100vw;
+  }
+
+  .manege-a {
+    font-size: 1rem;
+    width: 100vw;
+    text-align: center;
+    margin: 0%;
+    height: 400px;
+  }
+
+  .manege-a h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .manege-a p {
+    color: #000000;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 2%;
+    color: #8c8c94;
+    width: 100%;
+  }
+  .get-b {
+    display: none;
+  }
+
+  button.get-b-m {
+    display: inline-block;
+    position: relative;
+    left: 31%;
+    margin: 1% 0px;
+    border-radius: 20px;
+    background-color: var(--color-botones);
+    color: white;
+    width: 143px;
+    height: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .get-b-m:hover{
+    transform: scale(1.02);
+  }
+
+
+  .get-b-c:hover{
+    transform: scale(1.02);
+  }
+
+  div.botones {
+    width: 64vw;
+  }
+
+  .get-b-m:hover {
+    cursor: pointer;
+  }
+
+  article.main-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .m2a {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .m2a p {
+    text-align: center;
+    font-size: 1rem;
+    color: #8c8c94;
+    width: 100%;
+  }
+
+  .m2a h2 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  .m2b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+  }
+
+  div.alinear {
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    gap: 1rem;
+    background: linear-gradient(307deg, rgb(249, 206, 206), #f7a18c);
+  }
+  div.alinear h3 {
+    position: relative;
+    right: 3%;
+    padding: 2%;
+  }
+  .b2_text {
+    color: #8c8c94;
+    padding-top: 5%;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .comentarios_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h2-comment {
+    width: 100%;
+    height: 181px;
+    margin: 13% 0 0 0;
+    font-size: 2rem;
+  }
+
+  .c1 {
+    display: none;
+  }
+  .c3 {
+    display: none;
+  }
+
+  .texto_comment p {
+    color: #8c8c94;
+    margin-top: 5%;
+  }
+  .texto_comment h3 {
+    margin-bottom: 9%;
+  }
+
+  button.get-b-c {
+    width: 37%;
+    height: 45px;
+  }
+
+  .pre_footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .pre_footer h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .pre_footer button {
+    width: 37%;
+    height: 45px;
+    font-size: 1em;
+    margin-top: 8%;
+  }
+
+  /*FOOTER INICIO */
+
+  footer {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .formulario {
+    gap: 5px;
+  }
+
+  input.inp-f {
+    width: 208px;
+    height: 37px;
+    margin-bottom: 37%;
+  }
+
+  button.b-form {
+    width: 81px;
+    height: 37px;
+    top: 1px;
+    left: 4px;
+  }
+
+  .menu-f-b {
+    display: none;
+  }
+
+  p.copy-r {
+    display: none;
+  }
+
+  .container-contacto {
+    display: flex;
+    gap: 64px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer__nav {
+    gap: 33px;
+  }
+
+  .f1 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .f1 h2 {
+    text-align: center;
+    margin: 2%;
+  }
+
+  .contacto {
+    gap: 28px;
+    font-size: 2rem;
+  }
+
+  .copy-r-m {
+    display: block;
+    color: #8c8c94;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
